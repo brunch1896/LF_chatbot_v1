@@ -7,7 +7,7 @@ import streamlit as st
 #     "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
 #     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
 
-openai_api_key = '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'
+# openai_api_key = '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'
 
 st.title("💬 颖鸿之家问答机器人")
 if "messages" not in st.session_state:
@@ -21,7 +21,7 @@ if prompt := st.chat_input():
         st.info("Please add your OpenAI API key to continue.")
         st.stop()
 
-    openai.api_key = openai_api_key
+    openai.api_key = "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"
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages)

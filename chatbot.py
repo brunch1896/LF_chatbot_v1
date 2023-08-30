@@ -7,7 +7,7 @@ import streamlit as st
 #     "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
 #     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
 
-openai_api_key = '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'
+openai_api_key = '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'
 
 st.title("💬 颖鸿之家问答机器人")
 if "messages" not in st.session_state:

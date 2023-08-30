@@ -9,9 +9,9 @@ import streamlit as st
 
 openai_api_key = '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'
 
-st.title("💬 Chatbot")
+st.title("💬 颖鸿之家问答机器人")
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "你想问什么问题？"}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
